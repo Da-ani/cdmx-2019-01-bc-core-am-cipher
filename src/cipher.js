@@ -29,6 +29,7 @@ encode: (offsetIngresado, textoIngresado) => {
     // a la variable declarada arriba como let nuevaPalabra
 
     }
+    
   return nuevaPalabra
 
 

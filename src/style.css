@@ -1,11 +1,25 @@
+body {
+background: url(https://66.media.tumblr.com/3a2fa80cb60a54b4d705e7f6fbd6b5d4/tumblr_o2iefdY35M1uod5pqo1_250.gif)
+
+}
+
 .flecha1{
   margin: 0px 380px;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
 
 
   }
 
 .flecha2{
   margin: 0px 380px;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+
 
 }
 
