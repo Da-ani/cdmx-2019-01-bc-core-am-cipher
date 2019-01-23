@@ -5,18 +5,76 @@ window.cipher = {
 encode: (offsetIngresado, textoIngresado) => {
   let nuevaPalabra= "";
   let i = 0;
-  textoIngresado= textoIngresado.toUpperCase();
+  let offsetPar = parseInt(offsetIngresado);
+  let textoAscii = "";
+
+       for(i=0; i<textoIngresado.length; i++){
+    let textoAscii = textoIngresado.charCodeAt(i);
+
+
+       if(textoAscii >= 65 && textoAscii <= 90){ //MAYUSCULAS
+    let textoYaCifrado= (textoAscii - 65 + offsetPar) %26 + 65;
+    let resultado= String.fromCharCode(textoYaCifrado);
+    nuevaPalabra+=resultado;
+
+
+} else if(textoAscii >= 97 && textoAscii <= 122){ //MINUSCULAS
+    let textoYaCifrado= (textoAscii - 97 + offsetPar) %26 + 97;
+    let resultado= String.fromCharCode(textoYaCifrado);
+    nuevaPalabra+=resultado;
+
+
+  } else{  //SIGNOS PASAN IGUAL
+   nuevaPalabra+=String.fromCharCode(textoAscii);
+}
+
+}
+return nuevaPalabra
+
+},
+
+decode: (offsetIngresado, textoIngresado) => {
+    let nuevaPalabra= "";
+    let i = 0;
+    let offsetPar = parseInt(offsetIngresado);
+    let textoAscii = "";
+
+         for(i=0; i<textoIngresado.length; i++){
+      let textoAscii = textoIngresado.charCodeAt(i);
+
+
+         if(textoAscii >= 65 && textoAscii <= 90){ //MAYUSCULAS
+      let textoYaCifrado= (textoAscii - 65 - offsetPar) %26 + 65;
+      let resultado= String.fromCharCode(textoYaCifrado);
+      nuevaPalabra+=resultado;
+
+
+  } else if(textoAscii >= 97 && textoAscii <= 122){ //MINUSCULAS
+      let textoYaCifrado= (textoAscii - 97 - offsetPar) %26 + 97;
+      let resultado= String.fromCharCode(textoYaCifrado);
+      nuevaPalabra+=resultado;
+
+
+    } else{  //SIGNOS PASAN IGUAL
+     nuevaPalabra+=String.fromCharCode(textoAscii);
+  }
+
+  }
+  return nuevaPalabra
+}
+}
+
 
   //Hacer un for para que vaya contando las letras que ingrese el usuario de una en una
-  for(i=0; i<textoIngresado.length; i++){
+  // for(i=0; i<textoIngresado.length; i++){
       //usamos charcodeat para que me convierta las letras ingresadas a ascii
-    let textoYaCifrado = (textoIngresado.charCodeAt(i) - 65 + parseInt(offsetIngresado)) %26 + 65;
+    // /let textoYaCifrado = (textoIngresado.charCodeAt(i) - 65 + parseInt(offsetIngresado)) %26 + 65;
     //como en elresultado de la formula solo me dará en que posición estará
     // la letra del desplazamiento que dimos usamos String.fromCharCodeF
     //para que esa posición del desplazamiento que pedimos me lo convierta a la letra que le corresponde
-    let resultado = String.fromCharCode(textoYaCifrado);
+    //let resultado = String.fromCharCode(textoYaCifrado);
 
-    nuevaPalabra+=resultado; //Esto significa que como el for va dando vueltas por cada letra ingresada por el usuario,
+    //nuevaPalabra+=resultado; //Esto significa que como el for va dando vueltas por cada letra ingresada por el usuario,
     // en let resultado va mandando
     //las letras que va pasando, por ejemplo si el ususario pone ABC, lo que hace for es primero ir con la  A
     //le aplica toda la función y la manda a let resultado despues se sigue con la B, le aplica la funcion y al momento de mandarla
@@ -28,33 +86,28 @@ encode: (offsetIngresado, textoIngresado) => {
     //declarada en la parte de arriba con el + le estamos sumando cada letra que va contando el for y la va mandando
     // a la variable declarada arriba como let nuevaPalabra
 
-    }
-    
-  return nuevaPalabra
-
-
-},
 
 
 
-decode: (offsetIngresado, textoIngresado) => {
 
-
-  let nuevaPalabra= "";
-  let i = 0;
-  textoIngresado= textoIngresado.toUpperCase();
-
-  for(i=0; i<textoIngresado.length; i++){
-
-    let textoYaCifrado = (textoIngresado.charCodeAt(i) + 65 - parseInt(offsetIngresado)) %26 + 65;
-
-    let resultado = String.fromCharCode(textoYaCifrado);
-
-    nuevaPalabra+=resultado;
-
-  }
-
-  return nuevaPalabra
-
-}
-}
+// decode: (offsetIngresado, textoIngresado) => {
+//
+//
+//   let nuevaPalabra= "";
+//   let i = 0;
+//   textoIngresado= textoIngresado.toUpperCase();
+//
+//   for(i=0; i<textoIngresado.length; i++){
+//
+//     let textoYaCifrado = (textoIngresado.charCodeAt(i) + 65 - parseInt(offsetIngresado)) %26 + 65;
+//
+//     let resultado = String.fromCharCode(textoYaCifrado);
+//
+//     nuevaPalabra+=resultado;
+//
+//   }
+//
+//   return nuevaPalabra
+//
+// }
+// }

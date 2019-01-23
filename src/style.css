@@ -1,29 +1,188 @@
-body {
-background: url(https://66.media.tumblr.com/3a2fa80cb60a54b4d705e7f6fbd6b5d4/tumblr_o2iefdY35M1uod5pqo1_250.gif)
+*{
+  font-family: 'Dancing Script', cursive;
 
 }
 
+
+.logo {
+
+ position: relative;
+ left: 310px;
+  margin: 0px;
+
+}
+
+
+body {
+background-image: url("fondo/fondomorado.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+}
+
 .flecha1{
-  margin: 0px 380px;
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  color: white;
+  margin: 0px 540px 50px;
+  width: 215px;
+  height: 90px;
+  background-color: rgba(168, 0, 0, .7);
+
+
+  font-size: 50px;
+  color: #fff;
+  border-radius: 300px;
+  border-style: double;
+  border-color: #9DC094;
+  border-width: 2px;
+  position: relative;
+  bottom: 200px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.10s;
+  transition-duration: 0.4s;
+
 
 
   }
 
+.flecha1:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #4CAF50; /* Green */
+  color: black;
+  border: solid;
+  border-width:2px;
+transform: translateY(4px);
+}
+
+.flecha1:active {
+  box-shadow: 0 7px #666;
+transform: translateY(8px);
+  }
+
+
 .flecha2{
-  margin: 0px 380px;
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  color: white;
+  margin: 0px 535px 40px;
+  width: 210px;
+  height: 90px;
+  background-color: rgba(168, 0, 0, .7);
+
+
+  font-size: 50px;
+  color: #fff;
+  border-radius: 300px;
+  border-style: double;
+  border-color: #9DC094;
+  border-width: 2px;
+  position: relative;
+  bottom: 0px;
+  top: -80px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.4s;
+}
+
+.flecha2:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #4CAF50; /* Green */
+  color: black;
+  border: solid;
+  border-width:2px;
+  transform: translateY(4px);
+}
+
+.flecha2:active {
+  box-shadow: 0 7px #666;
+transform: translateY(8px);
+  }
+
+
+.texto{
+  background: rgba(43, 86, 133, .7);
+
+  width:300px;
+  height: 200px;
+  margin: 50px;
+  position: relative;
+  top: 120px;
+  left: 40px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 20px;
+  border-style: double;
+  border-width: 3px;
+  border-color: rgba(0, 0, 0,)
+
+}
+
+.offset{
+
+  background: rgba(250, 128, 114, .8);
+  width:100px;
+  height: 50px;
+  margin: 50px;
+  position: relative;
+  top:125px;
+  right: -130px;
+  border-radius: 0px;
+  text-align: center;
+  font-size: 25px;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0,);
+
+}
+
+.receptor{
+  background: rgba(193, 31, 63, .9);
+
+  width:300px;
+  height: 200px;
+  margin: 50px;
+  position: relative;
+  bottom: 0px;
+  top: -465px;
+  left: 850px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 20px;
+  border-style: double;
+  border-width: 3px;
+  border-color: #000;
+
+}
+
+.flechita{
+position: relative;
+bottom: 835px;
+width: 300px;
+left: 90px;
+}
+
+
+::-webkit-input-placeholder {
+  color: #000;
+  font-size: 25px;
+ }
+
+.chat{
+position: relative;
+bottom: 1170px;
+width: 100px;
+left: 875px;
+
+}
+
+.corazon{
+position: relative;
+bottom: 725px;
+width: 200px;
+height: 80px;
+left: 850px;
 
 
 }
 
-.texto{
-  width:35%;
-
+.reset{
+position: relative;
+  bottom: 745px;
+  width: 50px;
+  left: 720px;
 }

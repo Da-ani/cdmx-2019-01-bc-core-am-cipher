@@ -4,41 +4,51 @@
     <meta charset="utf-8">
     <title>Cifrado Cesar</title>
     <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Coiny|Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Coiny|Libre+Barcode+128+Text|Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Coiny|Courgette|Libre+Barcode+128+Text|Pacifico|Satisfy" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   </head>
 
   <body>
 
     <div id="root">
    <!--Titulo-->
-  <h1><em>RULETA</em></h1>
+  <header>
+  <img src="fondo/bigLogo.png" class= "logo">
+
+</header>
 
 
-<div> <!--entrada de texto-->
   <form method="post">
-    <input type="text" class="texto" id="mensaje">
-    <input type="text" class="offset" id="offset">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <input type="button"  value="Cifrar" class="flecha1" id="flechacifrar">
-     <br>
-     <br>
-     <br>
-     <br>
+    <div> <!--entrada de texto-->
+    <input type="text" placeholder="Escribe tu Mensaje" class="texto" id="mensaje">
+    <input type="text" placeholder="#" class="offset" id="offset"> <br>
+    <input type="button"  value="Cifrar" class="flecha1" id="flechacifrar"> <br>
     <input type="button" value="Descifrar" class="flecha2" id="flechadescifrar"> <br>
+    <input type="text"  class="receptor" id="receptordemensaje">
+</div>
 
-    <input type="text"  id="receptordemensaje">
+<div class="">
+  <img src="imagenes/flechita.png" class="flechita" alt="">
+
+</div>
+
+<div class="">
+  <img src="imagenes/chat.svg" class="chat" alt="">
+  <img src="imagenes/corazon.png" class="corazon" alt="">
+  <img src="imagenes/Reset.png" class="reset" alt="">
+</div>
+
+
+<div class="">
+  <input type="reset" src="imagenes/corazon.png" name="" value="reset">
+</div>
+
 
   </form>
 
 
-</div>
 
 
       <!--<div class=""> entrada de texto 2
@@ -46,8 +56,7 @@
       </div>-->
 
 
-
-    </div>
+<p>AQUI</p>
 
 
     <script src="cipher.js"></script>
