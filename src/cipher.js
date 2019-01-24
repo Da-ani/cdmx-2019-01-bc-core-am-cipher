@@ -6,7 +6,7 @@ encode: (offsetIngresado, textoIngresado) => {
   let nuevaPalabra= "";
   let i = 0;
   let offsetPar = parseInt(offsetIngresado);
-  let textoAscii = "";
+
 
        for(i=0; i<textoIngresado.length; i++){
     let textoAscii = textoIngresado.charCodeAt(i);
@@ -37,20 +37,20 @@ decode: (offsetIngresado, textoIngresado) => {
     let nuevaPalabra= "";
     let i = 0;
     let offsetPar = parseInt(offsetIngresado);
-    let textoAscii = "";
+
 
          for(i=0; i<textoIngresado.length; i++){
       let textoAscii = textoIngresado.charCodeAt(i);
 
 
          if(textoAscii >= 65 && textoAscii <= 90){ //MAYUSCULAS
-      let textoYaCifrado= (textoAscii - 65 - offsetPar) %26 + 65;
+      let textoYaCifrado= (textoAscii + 65 - offsetPar) %26 + 65;
       let resultado= String.fromCharCode(textoYaCifrado);
       nuevaPalabra+=resultado;
 
 
   } else if(textoAscii >= 97 && textoAscii <= 122){ //MINUSCULAS
-      let textoYaCifrado= (textoAscii - 97 - offsetPar) %26 + 97;
+      let textoYaCifrado= (textoAscii - 122 - offsetPar) %26 + 122;
       let resultado= String.fromCharCode(textoYaCifrado);
       nuevaPalabra+=resultado;
 
