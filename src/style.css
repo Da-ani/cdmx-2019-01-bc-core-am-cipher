@@ -173,9 +173,9 @@ left: 875px;
 .corazon{
 position: relative;
 bottom: 725px;
-width: 200px;
-height: 80px;
-left: 850px;
+width: 300px;
+height: 120px;
+left: 810px;
 
 
 }
@@ -185,4 +185,17 @@ position: relative;
   bottom: 745px;
   width: 50px;
   left: 720px;
+}
+
+
+.ultimoboton{
+position: relative;
+bottom: 840px;
+left: 1022px;
+width: 80px;
+height: 70px;
+font-size: 20px;
+background-color: rgba(254, 100, 130, .1);
+border: none;
+cursor:pointer;
 }

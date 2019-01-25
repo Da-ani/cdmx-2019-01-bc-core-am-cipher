@@ -1,6 +1,6 @@
 # Cifrado César
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
+ Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
 
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
 
@@ -14,6 +14,25 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 - Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 
 En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
+
+
+## Definición del Proyecto
+
+Chat Enamorandonos es una app web de mensajería, la cual sirve como medio de privacidad ante las distintas situaciones en que se requiera usar, puede ser dentro de cualquier relación interpersonal que se necesite.
+Actualmente la mayoría de las relaciones interpersonales, se rompen gracias a la gran interacción que tenemos dentro de redes sociales y aplicaciones que requieren de algun tipo de interacción con otra persona, ya que no se garantiza ningun tipo de privacidad a estas.
+
+## Función
+
+Chat Enamorándonos funciona a través de un Cifrado Cesar, en donde puedes elegir el número de desplazamiento que dará el mensaje que desees enviar, el cual se pondrá en el recuadro llamado "Escribe tu mensaje", el desplazamiento está hallado en seguida identificado con un sigo de número (#).
+Hay dos botones en la parte de en medio, uno con el nombre Cifrar y el otro Descifrar para que tu elijas la acción que quieras que tu mensaje tenga y el como va a ser enviado
+
+
+## Principales Usuarios del producto
+Es un proyecto pensado en un 70% a parejas o cualquier tipo de relación amorosa, ya que se considera que esta aplicación podría resolver en cierto porcentaje, enfrentamientos y rompimientos de la relaciones humanas, ya que la privacidad a la vida personal, es algo que se está perdiendo día con día y cada vez va generando mayores consecuencias hasta el grado de cometer delitos pasionales.
+
+## Proceso de Diseño
+Chat Enamorándonos tiene un diseño con logotipo de el programa "Enamorándonos" ya que los colores usados son llamativos, contrastantes, y que no generan ningun prejuicio frente a ningun género.
+En el siguiente Link encontrarás la aplicación Chat Enamorándonos 
 
 ## Resumen del proyecto
 
