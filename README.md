@@ -32,7 +32,23 @@ Es un proyecto pensado en un 70% a parejas o cualquier tipo de relación amorosa
 
 ## Proceso de Diseño
 Chat Enamorándonos tiene un diseño con logotipo de el programa "Enamorándonos" ya que los colores usados son llamativos, contrastantes, y que no generan ningun prejuicio frente a ningun género.
-En el siguiente Link encontrarás la aplicación Chat Enamorándonos 
+En el siguiente Link encontrarás la aplicación Chat Enamorándonos
+
+## Ejecutando las Pruebas
+
+Este proyecto fue ejecutado bajo una serie de pruebas escritas y redactadas dentro de un test, indicando de manera clara y concisa, tanto los pasos a seguir como el orden que debía tener, de manera que cada prueba se ejecutaba a través de un comando llamado npm run test, para así poder ir observando errores dentro de este proyecto por cada modificación hecha.
+Las herramientas utilizadas dentro de este proyecto fue, html 5, JavaScript ES6 y CSS 
+
+
+
+
+
+
+
+
+
+
+
 
 ## Resumen del proyecto
 
